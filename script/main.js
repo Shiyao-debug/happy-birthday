@@ -73,7 +73,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
       },
-      "+=2.5"
+      "+=0.3"
     )
     .to(
       ".two",
@@ -96,7 +96,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
       },
-      "+=2"
+      "+=0.3"
     )
     .from(".four", 0.7, {
       scale: 0.2,
@@ -128,9 +128,9 @@ const animationTimeline = () => {
       "+=0.7"
     )
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=0.2")
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-2", 0.7, ideaTextTransLeave, "+=0.2")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
@@ -138,9 +138,9 @@ const animationTimeline = () => {
       backgroundColor: "rgb(21, 161, 237)",
       color: "#fff"
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=0.2")
     .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=0.2")
     .from(
       ".idea-5",
       0.7,
@@ -152,7 +152,7 @@ const animationTimeline = () => {
         z: 10,
         opacity: 0
       },
-      "+=0.5"
+      "+=0.1"
     )
     .to(
       ".idea-5 .smiley",
@@ -161,7 +161,7 @@ const animationTimeline = () => {
         rotation: 90,
         x: 8
       },
-      "+=0.4"
+      "+=0.1"
     )
     .to(
       ".idea-5",
@@ -170,7 +170,7 @@ const animationTimeline = () => {
         scale: 0.2,
         opacity: 0
       },
-      "+=2"
+      "+=0.1"
     )
     .staggerFrom(
       ".idea-6 span",
@@ -193,11 +193,11 @@ const animationTimeline = () => {
         ease: Expo.easeOut
       },
       0.2,
-      "+=1"
+      "+=0.1"
     )
     .staggerFromTo(
       ".baloons img",
-      2.5,
+      0.8,
       {
         opacity: 0.9,
         y: 1400
@@ -206,7 +206,7 @@ const animationTimeline = () => {
         opacity: 1,
         y: -1000
       },
-      0.2
+      0.05
     )
     .from(
       ".lydia-dp",
@@ -218,7 +218,7 @@ const animationTimeline = () => {
         y: -25,
         rotationZ: -45
       },
-      "-=2"
+      "-=0.1"
     )
     .from(".hat", 0.5, {
       x: -100,
@@ -289,7 +289,7 @@ const animationTimeline = () => {
       {
         rotation: 90
       },
-      "+=1"
+      "+=0.1"
     );
 
   // tl.seek("currentStep");

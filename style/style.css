@@ -12,9 +12,9 @@ body {
   width: 100vh;
   margin: 0 auto;
   text-align: center;
-  visibility: hidden;
+  visibility: visible;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .container div.six {

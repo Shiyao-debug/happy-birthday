@@ -288,6 +288,7 @@ const animationTimeline = () => {
       0.5,
       {
         rotation: 90
+        onComplete: launchFireworks
       },
       "+=0.1"
     );

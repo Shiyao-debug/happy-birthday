@@ -287,7 +287,7 @@ const animationTimeline = () => {
       ".last-smile",
       0.5,
       {
-        scale: 1.5
+        scale: 1.5,
         onComplete: launchFireworks
       },
       "+=0.1"

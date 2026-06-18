@@ -301,6 +301,31 @@ const animationTimeline = () => {
     tl.restart();
   });
 };
+function launchFireworks() {
+  const container = document.getElementById("fireworks");
 
+  for (let i = 0; i < 30; i++) {
+
+    const fw = document.createElement("div");
+
+    fw.className = "firework";
+
+    fw.innerHTML = ["🎆","🎇","✨","🎉","🎊"][Math.floor(Math.random()*5)];
+
+    fw.style.left = "50%";
+    fw.style.top = "50%";
+
+    container.appendChild(fw);
+
+    TweenMax.to(fw, 2, {
+      opacity: 1,
+      x: (Math.random()-0.5)*1200,
+      y: (Math.random()-0.5)*800,
+      rotation: Math.random()*720,
+      ease: Power2.easeOut,
+      onComplete: () => fw.remove()
+    });
+  }
+}
 // Run fetch and animation in sequence
 fetchData();
